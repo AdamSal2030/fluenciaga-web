@@ -24,7 +24,7 @@
 
 html {
   font-family: var(--font-brand);
-  background: #2d5016;
+  background: #1a3a1a;
   color: var(--text-main);
   scroll-behavior: smooth;
   overflow-x: hidden; /* Prevent overflow on html element */
@@ -32,7 +32,7 @@ html {
 
 body {
   @apply text-white antialiased;
-  background: #2d5016;
+  background: #1a3a1a;
   overflow-x: hidden; /* Prevent horizontal scrolling */
 }
 
