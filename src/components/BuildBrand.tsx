@@ -123,7 +123,7 @@ export default function BuildBrand() {
                   key={idx}
                   data-card
                   className={[
-                    "relative overflow-hidden rounded-3xl border border-white/10 bg-[#0c0f16] px-6 py-8 md:px-8 md:py-10",
+                    "relative overflow-hidden rounded-3xl border border-yellow-600/40 bg-[#1a1200] px-6 py-8 md:px-8 md:py-10",
                     "transition-[transform,opacity,filter,box-shadow] duration-600 ease-[cubic-bezier(.22,1,.36,1)] will-change-transform",
                     offset === 0
                       ? "shadow-[0_40px_120px_-30px_rgba(180,140,50,.28)]"
