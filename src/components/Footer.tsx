@@ -4,7 +4,7 @@ import Link from "next/link";
 export default function Footer() {
   return (
     <footer className="mx-3 md:mx-6 mt-16">
-      <div className="rounded-3xl border border-white/10 bg-[#060e06] px-6 py-10 md:px-10 md:py-12 relative overflow-hidden">
+     <div className="rounded-3xl border border-yellow-600/40 bg-[#1a1200] px-6 py-10 md:px-10 md:py-12 relative overflow-hidden">
         {/* soft background accents */}
         <div
           aria-hidden
