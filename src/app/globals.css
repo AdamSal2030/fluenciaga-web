@@ -24,15 +24,15 @@
 
 html {
   font-family: var(--font-brand);
-  background: #000;           /* keep it pure black */
+  background: #2d5016;
   color: var(--text-main);
   scroll-behavior: smooth;
   overflow-x: hidden; /* Prevent overflow on html element */
 }
 
 body {
-  @apply bg-black text-white antialiased;
-  background: #000;
+  @apply text-white antialiased;
+  background: #2d5016;
   overflow-x: hidden; /* Prevent horizontal scrolling */
 }
 
