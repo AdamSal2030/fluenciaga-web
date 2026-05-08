@@ -145,7 +145,7 @@ export default function ContactForm() {
 
       <form
         onSubmit={handleSubmit(onSubmit)}
-        className="mt-8 rounded-2xl border border-white/10 bg-[#0c0f16] p-6 md:p-8"
+        className="mt-8 rounded-2xl border border-yellow-600/40 bg-[#1a1200] p-6 md:p-8"
       >
         {/* Name row */}
         <div className="grid grid-cols-1 gap-4 md:grid-cols-2">
