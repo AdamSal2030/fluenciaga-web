@@ -7,8 +7,7 @@ import Link from "next/link";
 export default function ChatIcon() {
   return (
     <motion.div
-      className="fixed bottom-8 right-8 cursor-pointer rounded-full p-3 bg-purple-600 text-white shadow-lg z-50"
-      whileHover={{ scale: 1.1 }}
+className="fixed bottom-8 right-8 cursor-pointer rounded-full p-3 bg-gradient-to-r from-yellow-600 to-amber-500 text-white shadow-lg z-50"      whileHover={{ scale: 1.1 }}
       whileTap={{ scale: 0.9 }}
     >
       <Link
