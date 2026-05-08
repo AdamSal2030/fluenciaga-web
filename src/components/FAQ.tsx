@@ -69,7 +69,7 @@ export default function FAQ({
         </span>
       </h2>
 
-      <div className="mt-10 divide-y divide-white/10 rounded-2xl border border-white/10 bg-[#0c0f16]">
+      <div className="mt-10 divide-y divide-yellow-600/20 rounded-2xl border border-yellow-600/40 bg-[#1a1200]">
         {faqs.map((qa, i) => {
           const isOpen = openIdx === i;
           const headerId = `${rootId}-h-${i}`;
