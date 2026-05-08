@@ -80,7 +80,7 @@ export default function Process() {
       <div className="mb-14">
         <h2 className="text-4xl md:text-5xl font-black leading-tight">
           Our{" "}
-          <span className="text-transparent bg-clip-text bg-gradient-to-r from-fuchsia-400 via-purple-400 to-rose-400">
+          <span className="text-transparent bg-clip-text bg-gradient-to-r from-yellow-500 to-amber-400">
             Process
           </span>
         </h2>
@@ -150,7 +150,7 @@ export default function Process() {
                 <span
                   className={[
                     "ml-2 inline-block h-2 w-2 rounded-full align-middle",
-                    "bg-gradient-to-br from-fuchsia-500 to-rose-500",
+                    "bg-gradient-to-br from-yellow-500 to-amber-400",
                     isSeen ? "scale-100 opacity-100" : "scale-0 opacity-0",
                     "transition-all duration-700",
                   ].join(" ")}
