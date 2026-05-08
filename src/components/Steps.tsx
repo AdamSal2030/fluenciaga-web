@@ -63,7 +63,7 @@ export default function HowItWorks() {
               <div className="grid grid-cols-[auto_1fr] gap-4">
                 {/* Number badge */}
                 <div className="mt-1">
-                  <div className="flex h-10 w-10 items-center justify-center rounded-full bg-white/10 ring-1 ring-white/15">
+                  <div className="flex h-10 w-10 items-center justify-center rounded-full bg-yellow-600/20 ring-1 ring-yellow-500/40">
                     <span className="text-base font-extrabold">{i + 1}</span>
                   </div>
                 </div>
