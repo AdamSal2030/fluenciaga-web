@@ -60,7 +60,7 @@ export default function Hero() {
       />
 
       {/* brighter diagonal marquee */}
-      <LogoMarqueeBG prefersReduced={!!prefersReduced} />
+      {/* logos removed */}
 
       <FX />
 
