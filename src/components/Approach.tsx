@@ -118,7 +118,7 @@ export default function Approach() {
                 data-card
                 data-speed={c.speed ?? 0.15}
                 className={[
-                  "relative rounded-3xl border border-white/10 bg-[#0c0f16] px-6 py-7 md:px-8 md:py-9 will-change-transform",
+                  "relative rounded-3xl border border-yellow-600/40 bg-[#1a1200] px-6 py-7 md:px-8 md:py-9 will-change-transform",
                   "transition-[transform,filter,box-shadow] duration-500 ease-[cubic-bezier(.22,1,.36,1)]",
                   i === activeIdx
                     ? "shadow-[0_40px_120px_-30px_rgba(180,140,50,.28)]"
