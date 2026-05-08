@@ -47,7 +47,7 @@ export default function Hero() {
   );
 
   return (
-    <section className="relative isolate overflow-hidden py-16 md:py-24">
+    <section className="relative isolate overflow-hidden py-16 md:py-24" style={{ backgroundColor: "#1a2e1a" }}>
       {/* brighter tint */}
       <motion.div
         key={current.name + "-tint"}
