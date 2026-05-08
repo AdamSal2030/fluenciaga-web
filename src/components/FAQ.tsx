@@ -59,10 +59,7 @@ export default function FAQ({
       <div
         aria-hidden
         className="pointer-events-none absolute inset-0 -z-10"
-        style={{
-          background:
-            "radial-gradient(800px 380px at 15% 0%, rgba(147,51,234,0.10), transparent 60%), radial-gradient(800px 380px at 85% 8%, rgba(99,102,241,0.08), transparent 62%)",
-        }}
+        style={{ background: "none" }}
       />
 
       <h2 className="text-3xl md:text-4xl font-black tracking-tight">
