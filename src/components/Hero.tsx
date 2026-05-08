@@ -47,7 +47,7 @@ export default function Hero() {
   );
 
   return (
-    <section className="relative isolate overflow-hidden py-16 md:py-24" style={{ backgroundColor: "#1a2e1a" }}>
+    <section className="relative isolate overflow-hidden py-16 md:py-24" style={{ backgroundColor: "#2d5a27" }}>
       {/* brighter tint */}
       <motion.div
         key={current.name + "-tint"}
@@ -155,15 +155,7 @@ function Ribbon({
   blur?: number;
   prefersReduced: boolean;
 }) {
-  const anim = prefersReduced ? {} : {
-    animate: { x: ["0%", "-50%"] as any },
-    transition: { 
-      duration: speed, 
-      repeat: Infinity, 
-      ease: "easeInOut" // Corrected transition with string ease
-    } as Transition,  // Type it explicitly here to ensure it matches the expected structure
-  };
-
+  const anim = {};
   return (
     <div
       className="absolute left-[-25%] right-[-25%]"
