@@ -1,0 +1,121 @@
+/* app/globals.css */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ---------- Theme tokens ---------- */
+:root {
+  --publisive-dark-bg: linear-gradient(120deg, #080f08 0%, #0d1a0d 90%);
+  --publisive-surface-glass: rgba(13,26,13,0.92);
+  --publisive-accent: #c9a84c;
+  --publisive-cyan: #e8c97a;
+  --publisive-footer: #0d1a0d;
+
+  --text-main: #ffffff;
+  --text-dim: #bdbde6;
+
+  /* next/font will set this from layout via className={brand.variable} */
+  /* fallback here just in case */
+  --font-brand: Montserrat, system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
+}
+
+/* ---------- Base ---------- */
+:root { color-scheme: dark; }
+
+html {
+  font-family: var(--font-brand);
+  background: #000;           /* keep it pure black */
+  color: var(--text-main);
+  scroll-behavior: smooth;
+  overflow-x: hidden; /* Prevent overflow on html element */
+}
+
+body {
+  @apply bg-black text-white antialiased;
+  background: #000;
+  overflow-x: hidden; /* Prevent horizontal scrolling */
+}
+
+.min-h-screen {
+  min-height: 100vh;
+}
+
+/* ---------- Component layer ---------- */
+@layer components {
+  .btn-publisive {
+    @apply px-8 py-3 mt-2 mb-2 rounded-full font-semibold border-2 shadow-md transition-colors duration-150;
+    @apply border-purple-900 bg-transparent text-white;
+  }
+  .btn-publisive:hover,
+  .btn-publisive:focus {
+    @apply bg-purple-900/10;
+    color: var(--publisive-accent);
+    outline: none;
+  }
+
+  .glass-panel,
+  .glass-panel-deep {
+    @apply border border-yellow-900/40 text-white;
+    background: #111a0f;       /* solid, fast; swap for var(--publisive-surface-glass) if you want translucency */
+    border-radius: 1.8rem;
+    box-shadow: none;
+  }
+
+  .logo-band-bg {
+    background: #0d1a0d;
+    @apply rounded-xl;
+    opacity: .9;
+  }
+
+  .stats-card {
+    @apply text-white border border-yellow-900/40 shadow-sm rounded-2xl;
+    background: #111a0f;
+  }
+}
+
+/* ---------- Nav / links ---------- */
+nav a,
+.nav-link {
+  transition: color 0.15s;
+}
+nav a:hover,
+.nav-link:hover {
+  color: var(--publisive-accent);
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+
+/* ---------- Scrollbar (webkit) ---------- */
+::-webkit-scrollbar {
+  width: 8px;
+  background: #2d3140;
+}
+::-webkit-scrollbar-thumb {
+  background: #c9a84c;
+  border-radius: 4px;
+}
+
+/* ---------- Motion trims ---------- */
+section,
+.glass-panel,
+.glass-panel-deep {
+  animation: none;
+  transition: none;
+}
+
+/* ---------- Misc ---------- */
+*::placeholder {
+  color: var(--publisive-accent);
+}
+
+/* Fix for mobile font size */
+@media (max-width: 600px) {
+  html, body { font-size: 97%; }
+}
+
+/* Prevent Horizontal Overflow on Mobile */
+@media (max-width: 767px) {
+  body {
+    overflow-x: hidden; /* Prevent overflow on mobile */
+  }
+}
