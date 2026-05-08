@@ -35,16 +35,7 @@ export default function Hero() {
     return () => clearInterval(t);
   }, []);
 
-  const tintStyle = useMemo<React.CSSProperties>(
-    () => ({
-      backgroundImage: `
-        radial-gradient(800px 380px at 30% 20%, ${hexA(current.from, TINT_ALPHA_1)}, transparent 60%),
-        radial-gradient(800px 380px at 70% 80%, ${hexA(current.to,   TINT_ALPHA_2)}, transparent 60%)
-      `,
-      mixBlendMode: "lighten",
-    }),
-    [current]
-  );
+  const tintStyle = useMemo<React.CSSProperties>(() => ({}), [current]);
 
   return (
     <section className="relative isolate overflow-hidden py-16 md:py-24" style={{ backgroundColor: "#2d5a27" }}>
