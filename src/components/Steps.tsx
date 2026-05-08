@@ -69,7 +69,7 @@ export default function HowItWorks() {
                 </div>
 
                 {/* Card */}
-                <div className="relative rounded-2xl border border-white/10 bg-[#0c0f16] p-5 md:p-6 transition-[box-shadow,transform] duration-300 group-hover:shadow-[0_24px_80px_-24px_rgba(180,140,50,.25)]">
+                <div className="relative rounded-2xl border border-yellow-600/40 bg-[#1a1200] p-5 md:p-6 transition-[box-shadow,transform] duration-300 group-hover:shadow-[0_24px_80px_-24px_rgba(180,140,50,.45)]">
                   <div className="text-[10px] font-semibold tracking-[0.22em] uppercase text-white/60">
                     {s.k}
                   </div>
