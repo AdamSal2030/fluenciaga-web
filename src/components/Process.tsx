@@ -125,7 +125,7 @@ export default function Process() {
                 className={[
                   "grid place-items-center rounded-full",
                   "h-[92px] w-[92px] md:h-[104px] md:w-[104px]",
-                  "bg-[#0c0f16] border border-white/10",
+                  "bg-[#0c1a10] border border-white/10",
                   "shadow-[0_20px_60px_-30px_rgba(180,140,50,.35)]",
                   "relative",
                 ].join(" ")}
@@ -140,7 +140,7 @@ export default function Process() {
                   ].join(" ")}
                   aria-hidden
                 />
-                <span className="absolute inset-[4px] rounded-full bg-[#0c0f16] border border-white/10" />
+                <span className="absolute inset-[4px] rounded-full bg-[#0c1a10] border border-white/10" />
                 <Icon className="relative z-10 h-6 w-6 text-white/90" />
               </div>
 

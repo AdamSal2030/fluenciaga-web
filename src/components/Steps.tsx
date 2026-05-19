@@ -25,7 +25,7 @@ export default function HowItWorks() {
         className="pointer-events-none absolute inset-0 -z-10"
         style={{
           background:
-            "radial-gradient(900px 420px at 10% -10%, rgba(120,90,20,0.10), transparent 60%), radial-gradient(900px 420px at 90% 0%, rgba(99,102,241,0.09), transparent 62%)",
+            "radial-gradient(900px 420px at 10% -10%, rgba(120,90,20,0.10), transparent 60%), radial-gradient(900px 420px at 90% 0%, rgba(180,140,50,0.08), transparent 62%)",
         }}
       />
 

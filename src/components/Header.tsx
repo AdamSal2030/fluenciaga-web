@@ -20,7 +20,7 @@ export default function Header({ logoSrc = "/logo.png" }: { logoSrc?: string }) 
       <header className="fixed top-0 left-0 right-0 w-full z-50 px-4 md:px-6 mt-2.5">
         <div
           className="relative overflow-hidden rounded-2xl ring-1 ring-white/10 shadow-[0_6px_26px_rgba(0,0,0,.35)] mx-auto w-full max-w-7xl"
-          style={{ backgroundColor: "#1a3a1a" }}
+          style={{ backgroundColor: "#091510" }}
         >
           {/* RIGHT OVERLAY — subtle gradient + left fade (no seam) */}
           <div

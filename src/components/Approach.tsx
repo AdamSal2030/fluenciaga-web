@@ -66,7 +66,7 @@ export default function Approach() {
         className="pointer-events-none absolute inset-0 -z-10"
         style={{
           background:
-            "radial-gradient(800px 420px at 8% 0%, rgba(120,90,20,0.10), transparent 60%), radial-gradient(900px 460px at 95% 10%, rgba(34,211,238,0.08), transparent 62%)",
+            "radial-gradient(800px 420px at 8% 0%, rgba(120,90,20,0.10), transparent 60%), radial-gradient(900px 460px at 95% 10%, rgba(180,140,50,0.08), transparent 62%)",
           maskImage:
             "radial-gradient(1000px 600px at 30% 0%, black 60%, transparent 100%)",
           WebkitMaskImage:

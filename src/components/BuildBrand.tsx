@@ -155,7 +155,7 @@ export default function BuildBrand() {
                       className="pointer-events-none absolute inset-x-0 bottom-0 h-20 rounded-b-3xl"
                       style={{
                         background:
-                          "linear-gradient(180deg, transparent, rgba(120,90,20,0.10) 55%, rgba(99,102,241,0.12))",
+                          "linear-gradient(180deg, transparent, rgba(120,90,20,0.10) 55%, rgba(180,140,50,0.10))",
                       }}
                     />
                   )}

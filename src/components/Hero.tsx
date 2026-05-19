@@ -38,7 +38,7 @@ export default function Hero() {
   const tintStyle = useMemo<React.CSSProperties>(() => ({}), [current]);
 
   return (
-    <section className="relative isolate overflow-hidden py-16 md:py-24" style={{ backgroundColor: "#2d5a27" }}>
+    <section className="relative isolate overflow-hidden py-16 md:py-24" style={{ backgroundColor: "#0c1f12" }}>
       {/* brighter tint */}
       <motion.div
         key={current.name + "-tint"}
