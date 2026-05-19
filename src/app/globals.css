@@ -5,11 +5,17 @@
 
 /* ---------- Theme tokens ---------- */
 :root {
-  --publisive-dark-bg: linear-gradient(120deg, #080f08 0%, #0d1a0d 90%);
-  --publisive-surface-glass: rgba(13,26,13,0.92);
-  --publisive-accent: #c9a84c;
-  --publisive-cyan: #e8c97a;
-  --publisive-footer: #0d1a0d;
+  --fluenciaga-dark-bg: linear-gradient(120deg, #080f08 0%, #0d1a0d 90%);
+  --fluenciaga-surface-glass: rgba(13,26,13,0.92);
+  --fluenciaga-accent: #c9a84c;
+  --fluenciaga-cyan: #e8c97a;
+  --fluenciaga-footer: #0d1a0d;
+  /* legacy aliases so old references still work */
+  --publisive-dark-bg: var(--fluenciaga-dark-bg);
+  --publisive-surface-glass: var(--fluenciaga-surface-glass);
+  --publisive-accent: var(--fluenciaga-accent);
+  --publisive-cyan: var(--fluenciaga-cyan);
+  --publisive-footer: var(--fluenciaga-footer);
 
   --text-main: #ffffff;
   --text-dim: #bdbde6;
@@ -42,14 +48,17 @@ body {
 
 /* ---------- Component layer ---------- */
 @layer components {
-  .btn-publisive {
+  .btn-publisive,
+  .btn-fluenciaga {
     @apply px-8 py-3 mt-2 mb-2 rounded-full font-semibold border-2 shadow-md transition-colors duration-150;
-    @apply border-purple-900 bg-transparent text-white;
+    @apply border-yellow-800 bg-transparent text-white;
   }
   .btn-publisive:hover,
-  .btn-publisive:focus {
-    @apply bg-purple-900/10;
-    color: var(--publisive-accent);
+  .btn-publisive:focus,
+  .btn-fluenciaga:hover,
+  .btn-fluenciaga:focus {
+    @apply bg-yellow-900/10;
+    color: var(--fluenciaga-accent);
     outline: none;
   }
 

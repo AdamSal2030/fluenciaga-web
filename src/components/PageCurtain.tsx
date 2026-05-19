@@ -28,22 +28,24 @@ export default function PageCurtain() {
         transition={{ delay: 0.9, duration: 0.35 }}
         className="pointer-events-none fixed inset-0 z-[9998]"
       >
-        {/* Left curtain (cyan → emerald) */}
+        {/* Left curtain (gold → amber) */}
         <motion.div
           initial={{ x: "0%" }}
           animate={{ x: "-100%" }}
           exit={{ x: "-100%" }}
           transition={{ duration: 0.9, ease: [0.22, 1, 0.36, 1] }}
-          className="absolute inset-y-0 left-0 w-1/2 bg-gradient-to-br from-cyan-400 to-emerald-400"
+          className="absolute inset-y-0 left-0 w-1/2"
+          style={{ background: "linear-gradient(135deg, #c9a84c, #e8c97a)" }}
         />
 
-        {/* Right curtain (emerald → cyan) */}
+        {/* Right curtain (amber → gold) */}
         <motion.div
           initial={{ x: "0%" }}
           animate={{ x: "100%" }}
           exit={{ x: "100%" }}
           transition={{ duration: 0.9, ease: [0.22, 1, 0.36, 1] }}
-          className="absolute inset-y-0 right-0 w-1/2 bg-gradient-to-br from-emerald-400 to-cyan-400"
+          className="absolute inset-y-0 right-0 w-1/2"
+          style={{ background: "linear-gradient(135deg, #e8c97a, #c9a84c)" }}
         />
 
         {/* Center logo punch */}

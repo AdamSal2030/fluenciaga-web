@@ -191,7 +191,7 @@ export default function ContactForm() {
           </div>
           <div>
             <label className="mb-1 block text-sm text-white/80">Phone</label>
-            <div className="rounded-lg border border-white/10 bg-white/5 px-2 py-1.5 focus-within:border-purple-500">
+            <div className="rounded-lg border border-white/10 bg-white/5 px-2 py-1.5 focus-within:border-yellow-600">
               <PhoneInput
                 value={watch("phone") || ""}
                 onChange={(v) => setValue("phone", v ?? "")}

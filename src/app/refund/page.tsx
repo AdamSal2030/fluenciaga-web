@@ -1,10 +1,12 @@
-// app/refunds/page.tsx
+// app/refund/page.tsx
 "use client";
 
 import React from "react";
 import Link from "next/link";
+import Header from "@/components/Header";
+import Footer from "@/components/Footer";
 
-const ACCENT = "rgb(168,85,247)"; // Publisive purple
+const ACCENT = "#c9a84c"; // Fluenciaga gold
 
 function Section({
   id,
@@ -39,7 +41,9 @@ export default function RefundPolicyPage() {
   });
 
   return (
-    <main className="min-h-screen w-full bg-gradient-to-br from-[#0b0f18] via-black to-[#0b0f18]">
+    <>
+    <Header />
+    <main className="min-h-screen w-full bg-gradient-to-br from-[#080f08] via-[#0d1a0d] to-[#080f08]" style={{ paddingTop: "72px" }}>
       {/* Ambient blobs */}
       <div className="pointer-events-none fixed inset-0 overflow-hidden">
         <div
@@ -92,7 +96,7 @@ export default function RefundPolicyPage() {
                   <a
                     key={item.id}
                     href={`#${item.id}`}
-                    className="block rounded px-2 py-1 hover:text-black hover:bg-[rgb(168,85,247)]/90 transition-colors"
+                    className="block rounded px-2 py-1 hover:text-black hover:bg-[#c9a84c]/90 transition-colors"
                   >
                     {item.label}
                   </a>
@@ -105,20 +109,20 @@ export default function RefundPolicyPage() {
           <article className="lg:col-span-9">
             <div
               className="rounded-3xl border border-gray-700/40 bg-white/10 backdrop-blur-xl shadow-2xl p-6 sm:p-10"
-              style={{ boxShadow: "0 10px 25px rgba(168,85,247,0.10)" }}
+              style={{ boxShadow: "0 10px 25px rgba(201,168,76,0.12)" }}
             >
               <Section id="intro" title="Introduction">
                 <p>
-                  Thank you for choosing <strong>Publisive Media</strong>{" "}
+                  Thank you for choosing <strong>Fluenciaga Publishing</strong>{" "}
                   (&quot;we,&quot; &quot;us,&quot; &quot;our&quot;). We aim to
                   provide transparent, high-quality PR and media placement
                   services. This Refund Policy explains when refunds may be
                   issued for purchases made via{" "}
                   <Link
-                    href="https://www.publisivemedia.com/"
+                    href="https://fluenciaga.com/"
                     className="underline decoration-dotted underline-offset-4 hover:text-gray-100 ml-1"
                   >
-                    https://www.publisivemedia.com/
+                    https://fluenciaga.com/
                   </Link>{" "}
                   (the &quot;Site&quot;) or directly with our team.
                 </p>
@@ -205,10 +209,10 @@ export default function RefundPolicyPage() {
                   If you wish to cancel <em>before</em> work begins, contact us
                   immediately at{" "}
                   <a
-                    href="mailto:accounts@publisivemedia.com"
+                    href="mailto:accounts@fluenciaga.com"
                     className="underline"
                   >
-                    accounts@publisivemedia.com
+                    accounts@fluenciaga.com
                   </a>{" "}
                   or{" "}
                   <a href="tel:+15715716020" className="underline">
@@ -237,10 +241,10 @@ export default function RefundPolicyPage() {
                   immediate suspension of services. We’re happy to resolve any
                   issue quickly—please email{" "}
                   <a
-                    href="mailto:accounts@publisivemedia.com"
+                    href="mailto:accounts@fluenciaga.com"
                     className="underline"
                   >
-                    accounts@publisivemedia.com
+                    accounts@fluenciaga.com
                   </a>{" "}
                   and we’ll help.
                 </p>
@@ -249,7 +253,7 @@ export default function RefundPolicyPage() {
               <Section id="contact" title="8. Contact Us">
                 <address className="not-italic leading-relaxed">
                   <div className="font-semibold text-gray-100">
-                    Publisive Media
+                    Fluenciaga Publishing
                   </div>
                   <div>6545 MARKET AVE N STE 100</div>
                   <div>CANTON, OH 44721</div>
@@ -257,9 +261,9 @@ export default function RefundPolicyPage() {
                     Email:{" "}
                     <a
                       className="underline decoration-dotted underline-offset-4"
-                      href="mailto:accounts@publisivemedia.com"
+                      href="mailto:accounts@fluenciaga.com"
                     >
-                      accounts@publisivemedia.com
+                      accounts@fluenciaga.com
                     </a>
                   </div>
                   <div>
@@ -284,33 +288,15 @@ export default function RefundPolicyPage() {
             </div>
 
             <p className="text-center text-xs text-gray-400 mt-6">
-              © {new Date().getFullYear()} Publisive Media. All rights
+              © {new Date().getFullYear()} Fluenciaga Publishing. All rights
               reserved.
             </p>
           </article>
         </div>
       </div>
 
-      {/* Optional scroll indicator */}
-      <div
-        className="hidden md:block fixed bottom-6 left-1/2 -translate-x-1/2 animate-bounce"
-        aria-hidden
-      >
-        <svg
-          className="w-6 h-6"
-          style={{ color: ACCENT }}
-          fill="none"
-          stroke="currentColor"
-          viewBox="0 0 24 24"
-        >
-          <path
-            strokeLinecap="round"
-            strokeLinejoin="round"
-            strokeWidth={2}
-            d="M19 14l-7 7m0 0l-7-7m7 7V3"
-          />
-        </svg>
-      </div>
     </main>
+    <Footer />
+    </>
   );
 }

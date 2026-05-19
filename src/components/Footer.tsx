@@ -27,7 +27,7 @@ export default function Footer() {
             </p>
 
             <p className="mt-6 text-sm text-white/60">
-              © 2025 Fluenciaga Publishing. All rights reserved.
+              © {new Date().getFullYear()} Fluenciaga Publishing. All rights reserved.
             </p>
           </div>
 

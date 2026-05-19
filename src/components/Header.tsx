@@ -61,14 +61,14 @@ export default function Header({ logoSrc = "/logo.png" }: { logoSrc?: string }) 
                 <Link
                   key={n.href + n.label}
                   href={n.href}
-                  className="text-sm text-white/85 hover:text-[color:var(--publisive-accent)] transition-colors"
+                  className="text-sm text-white/85 hover:text-[color:var(--fluenciaga-accent)] transition-colors"
                 >
                   {n.label}
                 </Link>
               ))}
 
               {/* Sleek gradient ring CTA */}
-              <div className="rounded-full p-[2px] bg-gradient-to-r from-yellow-600 via-amber-500 to-yellow-400 transition-shadow hover:drop-shadow-[0_0_14px_rgba(168,85,247,.35)]">
+              <div className="rounded-full p-[2px] bg-gradient-to-r from-yellow-600 via-amber-500 to-yellow-400 transition-shadow hover:drop-shadow-[0_0_14px_rgba(201,168,76,.45)]">
                 <Link
                   href="/publications"
                   className="inline-flex items-center rounded-full px-4 py-1.5 text-sm font-semibold bg-[#070f07] text-white hover:bg-white/10 focus:outline-none"
