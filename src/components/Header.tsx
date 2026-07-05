@@ -12,6 +12,7 @@ export default function Header({ logoSrc = "/logo.png" }: { logoSrc?: string }) 
   // Point "Contact Us" to the contact section on the homepage
   const NAV = [
     { label: "Home", href: "/" },
+    { label: "Journal", href: "/blog" },
     { label: "Contact Us", href: "/#contact" }, // <-- anchor to your contact form
   ];
 

@@ -1,0 +1,10 @@
+
+# dependencies / build (added)
+/node_modules
+node_modules/
+/.next
+.next/
+/out
+.DS_Store
+*.tsbuildinfo
+.vercel
